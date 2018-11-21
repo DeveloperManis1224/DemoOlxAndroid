@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lyt_circle"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="App Icon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_thin"
+        android:textSize="22sp"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="false"
+        android:text="Proceed with your"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:text="Login"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="Username" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:hint="Password" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="16sp"
+        android:onClick="onClickLogin"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:text="Login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textColor="#8f8f8f"
+        android:fontFamily="@font/roboto_light_italic"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:text="Forgot Password?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_light_italic"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:text="New User?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:onClick="onClickRegister"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:text="Register here."/>
+    </LinearLayout>
+
+</LinearLayout>
